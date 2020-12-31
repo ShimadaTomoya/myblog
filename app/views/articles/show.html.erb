@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @article.title %>
+  <h2>#<%= @article.title %></h2>
 </p>
 
+<p><%= @article.created_at %></p>
+
 <p>
-  <strong>Content:</strong>
   <%= simple_format(@article.content) %>
 </p>
 
